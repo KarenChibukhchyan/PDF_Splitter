@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="158.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdfsplitter.OverwritingWindowController">
+   <children>
+      <Button fx:id="OverwriteOKBtn" layoutX="154.0" layoutY="123.0" mnemonicParsing="false" onAction="#OverwriteOKBtnAction" prefHeight="25.0" prefWidth="81.0" text="OK" />
+      <Button fx:id="OverwriteCancelBtn" defaultButton="true" layoutX="241.0" layoutY="123.0" mnemonicParsing="false" onAction="#OverwriteCancelBtnAction" prefHeight="25.0" prefWidth="81.0" text="Cancel" />
+      <Label fx:id="OverwriteWindLabel" layoutX="10.0" layoutY="25.0" prefHeight="30.0" prefWidth="429.0" text="The file   already exists." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="89.0" prefHeight="25.0" prefWidth="435.0" text="Do you want to overwrite it?" textAlignment="JUSTIFY">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

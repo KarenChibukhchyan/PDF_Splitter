@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdfsplitter.SplitWindowController">
+   <children>
+      <Label fx:id="SplitWindowLabel" layoutX="14.0" layoutY="27.0" prefHeight="38.0" prefWidth="573.0" text="The file has landscape format. How do you want to split it?" wrapText="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="LeftToFirstRadioBtn" layoutX="28.0" layoutY="122.0" mnemonicParsing="false" onAction="#LeftToFirstRadioBtnAction" selected="true" text="Left half to be first page (right half goes to end)">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="splitting" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="RightToFirstRadioBtn" layoutX="28.0" layoutY="153.0" mnemonicParsing="false" onAction="#RightToFirstRadioBtnAction" text="Right half to be first page (left half goes to end)" toggleGroup="$splitting">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="SplitBtn" defaultButton="true" layoutX="464.0" layoutY="102.0" mnemonicParsing="false" onAction="#SplitBtnAction" prefHeight="38.0" prefWidth="114.0" text="Split">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CancelBtn" layoutX="514.0" layoutY="151.0" mnemonicParsing="false" onAction="#CancelBtnAction" prefHeight="20.0" prefWidth="64.0" text="Cancel" />
+   </children>
+</Pane>
